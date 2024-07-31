@@ -27,10 +27,10 @@ const upload = multer({ storage: storage });
 
 // Create MySQL connection
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'c237_ga_nutrinourish'
+    host: 'sql.freedb.tech',
+    user: 'freedb_johnson',
+    password: 'prPnK$H9d?ee9nf',
+    database: 'freedb_c237_nutrinourish'
 });
 connection.connect((err) => {
     if (err) {
@@ -300,7 +300,7 @@ function handleError(res, error, message) {
 }
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
