@@ -1,0 +1,700 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Columns */
+.col {
+    flex: 1 1 calc(25% - 20px);
+    /* Adjust column width as needed */
+    max-width: calc(25% - 20px);
+    /* Adjust column width as needed */
+    box-sizing: border-box;
+}
+
+/* Card */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* Ensure consistent height (aspect ratios of ) */
+}
+
+/* Card image */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Card title */
+.card-title {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Card text */
+.card-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: auto;
+    /* Pushes the button to the bottom */
+}
+
+/* Button */
+.btn {
+    background-color: aquamarine;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+/* Add button container */
+.add {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .col {
+        flex: 1 1 calc(33.333% - 20px);
+        /* 3 columns for large screens */
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .col {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 columns for medium screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .col {
+        flex: 1 1 100%;
+        /* 1 column for small screens */
+        max-width: 100%;
+    }
+}
+
+.carousel-inner {
+    max-height: 400px;
+    /* Adjust max-height of carousel container */
+    border-radius: 20px;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    /* Adjust max-height as needed */
+    width: 80%;
+    object-fit: cover;
+    /* Maintain aspect ratio and cover entire area */
+}
+
+.custom-caption {
+    background-color: white;
+    /* Semi-transparent white background */
+    padding: 10px;
+    border-radius: 6px;
+    text-align: left;
+    width: 290px;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.carousel-caption h5 {
+    color: #333;
+    /* Dark text for contrast */
+    font-weight: bolder;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (max-height: 768px) {
+    .carousel-caption {
+        font-size: smaller;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+.rp-img {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ft-back {
+    text-align: center;
+}
+
+.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 30px;
+    color: black;
+}
+
+.nav-link {
+    border-radius: 20px;
+    border: 1px black solid;
+    padding: 2px;
+    margin-left: 9px;
+    color: white;
+    text-align: center;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: cadetblue;    
+}
+
+.nav-link:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+.search-bar {
+    align-items: center;
+}
+
+.separate {
+    margin: auto;
+}
+
+.home {
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    min-height: 600px;
+}
+
+.left-section {
+    text-align: left;
+    margin-left: 250px;
+    margin-right: 50px;
+    border-right: 2px black solid;
+    width: 50%;
+}
+
+.right-section {
+    flex-direction: column;
+    gap: 1px;
+    text-align: right;
+    margin-right: 125px;
+    max-width: 100%;
+
+}
+
+.main-image {
+    width: 93%;
+    height: 340px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.recipe-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.recipe-image {
+    width: 80%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.main-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.recipe-link {
+    text-decoration: none;
+    text-align: left;
+    font-size: large;
+    color: #333;
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.recipeid-link {
+    text-decoration: none;
+    text-align: left;
+    font-size: large;
+    color: cadetblue;
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.recipe-link:hover {
+    text-decoration: underline;
+}
+
+.recipeid-link:hover {
+    text-decoration: underline;
+}
+
+.main-link:hover {
+    text-decoration: underline;
+}
+
+.container-divider {
+    border: 5px solid black;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.description {
+    padding: 15px;
+}
+
+.tagline {
+    color: rgb(199, 98, 98);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+
+@media (max-width: 1200px) {
+    .left-section {
+        margin-left: 50px;
+        margin-right: 20px;
+        width: 100%;
+        border-right: none;
+        text-align: center;
+        /* Center text on smaller screens */
+    }
+
+    .right-section {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .recipe-item {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20px;
+        /* Add space between items */
+    }
+
+    .recipe-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .recipe-link {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-main {
+        flex-direction: column;
+    }
+
+    .left-section {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    .recipe-item {
+        height: auto;
+        margin-bottom: 20px;
+        /* Add space between items */
+    }
+
+    .recipe-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .recipe-link {
+        text-align: center;
+    }
+}
+
+/* Content Container Styles */
+.content-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Meal Plan Styles */
+.meal-plan {
+    margin-bottom: 2em;
+}
+
+.meal-plan-content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    transition: flex-direction 0.3s ease;
+}
+
+.meal-plan-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.meal-plan-image {
+    width: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.meal-plan-description {
+    width: 50%;
+    background-color: #f8f9fa;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .meal-plan-content {
+        flex-direction: column;
+    }
+
+    .meal-plan-content.reverse {
+        flex-direction: column;
+    }
+
+    .meal-plan-image,
+    .meal-plan-description {
+        width: 90%;
+
+    }
+
+    .meal-plan-image {
+        max-height: 200px;
+        /* Adjust the max height as needed */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .meal-plan-description {
+        margin-top: 1em;
+    }
+}
+
+.meal-plan-image {
+    height: 530px;
+}
+
+.ab-container {
+    display: flex;
+    max-width: 1050px;
+    margin: 20px auto;
+}
+
+.menu {
+    flex: 0 0 20%;
+    background-color: #f4f0e6;
+    color: black;
+    margin-bottom: auto;
+    padding: 15px;
+    text-align: center;
+    border-radius: 40px;
+    margin-right: 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20%;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: cadetblue;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+@media (max-width:768px) {
+    .ab-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    .ab-container {
+        max-width: 90%;
+    }
+}
+
+h5 {
+    font-weight: bold;
+}
+
+.about h2 {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.about h5,h6 {
+    text-align: center;
+    padding-inline: 350px;
+}
+
+.ab-link {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+
+.ab-link:hover {
+    color: greenyellow;
+    background-color: black;
+
+}
+
+.ab-list {
+    padding: 3%;
+}
+
+.content h2 {
+    text-decoration: underline;
+}
+
+#our-story {
+    padding-top: 105px;
+}
+
+#our-mission {
+    padding-top: 105px;
+}
+
+#community {
+    padding-top: 105px;
+}
+
+#announcement {
+    padding-top: 105px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: static;
+        width: 100%;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.sh-container {
+    flex: 1;
+}
+
+.sh-card {
+    max-width: 750px;
+    margin: auto;
+}
+
+.sh-card-img-top {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.sh-card-body {
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sh-btn {
+    margin-top: 10px;
+}
+
+.pfp {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.pf-link {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.sh-like-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sh-like-button:hover {
+    transform: scale(1.1);
+}
+
+.sh-like-button.clicked {
+    background-color: #28a745;
+    color: white;
+    transform: scale(1.1);
+}
+
+.sh-card-text {
+    margin-top: 18px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between; /* Distributes items between the start and end of the container */
+    align-items: center; /* Vertically center items */
+    margin-top: auto; /* Pushes the footer to the bottom of the card */
+    background-color: white;
+    border: none;
+}
+
+.edit-delete-contain {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: auto; 
+    background-color: white;
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.footer-link {
+    text-decoration: underline;
+    font-size: small;
+    color: navy;
+}
+
+.footer-link.edit {
+    color: black;
+    font-size: small;
+}
+
+.footer-link.edit:hover {
+    color: grey;
+}
+
+.footer-link.delete {
+    color: red;
+    border: none;
+    background-color: white;
+    font-size: small;
+}
+
+.footer-link.delete:hover {
+    color: darkred;
+}
+
+.footer-link.remove {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
